@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in</title>
+  <link rel="stylesheet" href="../CSS/login.css" />
+  <meta http-equiv="refresh" content="" />
+  <link rel="stylesheet" href="../CSS/nav & footer.css" />
+  <link rel="icon" href="../images/icon.svg" type="image/x-icon" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+  </style>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <img src="../images/logo.png" alt="Our Logo" class="site-logo" />
+      <div class="nav-links">
+        <div class="main-links">
+          <a href="Home.html" class="nav-item active">Home</a>
+          <a href="Listing page.html" class="nav-item">Products Info</a>
+          <a href="About Us.html" class="nav-item">About Us</a>
+          <a href="Contact Us-final.html" class="nav-item">Contact Us</a>
+          <a href="booking.html" class="nav-item">Booking</a>
+        </div>
+        <a href="login.html" class="nav-item sign-in">
+          <i class="fa-regular fa-user"></i>Sign in
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="container section">
+    <div class="tabs">
+      <a href="#">Sign in</a>
+      <a href="Register.html">Register</a>
+    </div>
+    <div class="line1"></div>
+    <div class="all">
+      <form class="form" onsubmit="checklogin(event)">
+        <div class="email">
+          <label>Username Or Email</label>
+          <input type="email" placeholder="example@example.com" required id="email" />
+        </div>
+        <div class="password">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Enter your Password" required />
+          <button id="btn-eye" type="button">
+            <i class="fa-solid fa-eye-slash icon"></i>
+          </button>
+        </div>
+        <div class="remember-forgot">
+          <label class="remember-label"><input type="checkbox" />Keep me signed in</label>
+          <a href="#"
+            onclick="window.open('reset-password.html', 'ResetPassword', 'width=1550px,height=1920px'); return false;">
+            Forgot Your Password?</a>
+        </div>
+        <a href="Home.html">
+          <button type="submit" class="login">
+            Login
+          </button>
+        </a>
+
+      </form>
+    </div>
+    <div class="or">OR</div>
+    <div class="social-media">
+      <a href="Home.html">
+        <button class="facebook">
+          <!--<ion-icon name="logo-facebook"></ion-icon>-->
+          <i class="fa-brands fa-facebook"></i>
+          <p>Login with Facebook</p>
+        </button>
+      </a>
+
+      <a href="Home.html">
+        <button class="google">
+          <!-- <ion-icon name="logo-google"></ion-icon>-->
+          <i class="fa-brands fa-google"></i>
+          <p>Login with Google</p>
+        </button>
+      </a>
+
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="quick-links">
+        <p>Quick Links</p>
+        <div class="quick-links-items-list">
+          <a class="quick-links-item" href="Home.html">Home</a><br />
+          <a class="quick-links-item" href="Listing page.html">Products Info</a><br />
+          <a class="quick-links-item" href="About Us.html">About Us</a><br />
+          <a class="quick-links-item" href="Contact Us-final.html">Contact Us</a><br />
+          <a class="quick-links-item" href="booking.html">Booking</a><br />
+          <a class="quick-links-item" href="Register.html">Sign in</a>
+        </div>
+      </div>
+      <div class="our-brands">
+        <p>Our Brands</p>
+        <ul>
+          <li>Lamborghini</li>
+          <li>Porsche</li>
+          <li>Lotus</li>
+          <li>BMW</li>
+          <li>Koenigsegg</li>
+          <li>Ferrari</li>
+        </ul>
+      </div>
+      <div class="socials">
+        <p>Our Mobile App</p>
+        <div class="social-icon-box">
+          <i class="fa-brands fa-apple apple-logo"></i>
+          <a href="https://www.apple.com/app-store/" class="download-button-text">
+            <p>Download on the Apple Store</p>
+          </a>
+        </div>
+        <div class="social-icon-box">
+          <i class="fa-brands fa-google-play google-play-logo"></i>
+          <a href="https://play.google.com/store/games?device=windows" class="download-button-text">
+            <p>Get it on Google Play</p>
+          </a>
+        </div>
+        <p>Connect With Us</p>
+        <div class="social-connect-icons">
+          <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/"> <i class="fa-brands fa-twitter"></i> </a>
+          <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="copy-right-div">
+        <p id="copy-right">© 2025 DosBenzen.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../JAVASCRIPT/login.js"></script>
+</body>
+
+</html>

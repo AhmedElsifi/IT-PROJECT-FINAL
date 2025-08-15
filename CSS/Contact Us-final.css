@@ -1,0 +1,270 @@
+:root {
+  --main-color: #050b20;
+  --sub-color1: #405ff2;
+  --main-background-color: #ffffff;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
+}
+
+.contact_us_page {
+  max-width: 1570px;
+  margin: 35px auto;
+}
+
+.Home-link {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+
+.Home-link:hover {
+  color: #601cfc;
+}
+
+.contact-us-link {
+  text-decoration: none;
+  color: black;
+}
+
+.map {
+  display: block;
+  align-content: center;
+  width: 1570px;
+  position: relative;
+  right: 15px;
+}
+
+.map iframe {
+  width: 1600px;
+  height: 600px;
+  border: none;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.get_contact {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: #fff;
+  color: black;
+}
+
+.get_in_touch {
+  width: calc(90% / 2);
+  max-height: 400px;
+  margin-right: 50px;
+}
+
+.get_in_touch_header {
+  margin-left: 15px;
+}
+
+.get_in_touch_text {
+  margin-left: 20px;
+  margin-bottom: 45px;
+}
+
+.fields {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.first_name,
+.last_name,
+.email,
+.phone {
+  width: calc(90% / 2);
+  height: 40px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 1px solid #e1e1e1;
+  outline: none;
+  resize: none;
+  transition: 0.8s;
+  font-family: "DM Sans", sans-serif;
+}
+
+.first_name:focus,
+.last_name:focus,
+.email:focus,
+.phone:focus,
+.message:focus {
+  border-color: gray;
+}
+
+.message {
+  width: 95%;
+  height: 135px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 1px solid #e1e1e1;
+  margin: auto;
+  outline: none;
+  resize: none;
+  transition: 0.8s;
+  font-family: "DM Sans", sans-serif;
+}
+
+.send_message {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background-color: var(--sub-color1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  right: 242px;
+  margin-top: 15px;
+  transition: 0.7s ease;
+}
+
+.send_message:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 10px 30px 35px;
+  border-radius: 15px;
+  max-width: calc(90% / 2);
+  max-height: 430px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: "DM Sans", sans-serif;
+}
+
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.contact-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-title i {
+  margin-right: 10px;
+  color: gray;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5;
+}
+
+.offices-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.our-offices h1 {
+  font-size: 30px;
+  font-weight: 550;
+  color: #000;
+  font-family: "Inria Sans", sans-serif;
+  position: relative;
+  left: 112px;
+  top: 20px;
+}
+
+.office {
+  width: 300px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #f8f8f81a;
+}
+
+.office h3 {
+  margin-top: 0;
+}
+
+.email-box p {
+  display: inline;
+  white-space: nowrap;
+}
+
+.phone1 p {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  left: 3px;
+  top: -1px;
+}
+
+.phone i {
+  position: relative;
+  right: 85px;
+  top: 10px;
+}
+
+.our-offices h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  left: 170px;
+}
+
+.contact-us .contact {
+  display: flex;
+  padding: 20px 0;
+  margin-bottom: 4px;
+  margin-left: 100px;
+}
+
+.contact-us .contact h1 {
+  display: inline-block;
+  color: #000;
+  font-size: 40px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-right: 10px;
+  text-decoration: none;
+  position: relative;
+  right: 140px;
+  top: 5px;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact_us_page {
+  width: 1570px;
+  margin: auto;
+}

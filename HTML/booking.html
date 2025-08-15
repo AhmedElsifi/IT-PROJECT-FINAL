@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking</title>
+  <link rel="stylesheet" href="../CSS/booking.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../CSS/nav & footer.css" />
+  <link rel="icon" href="../images/sign in icon.svg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;
+1,9..40,100..1000&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <img src="../images/logo.png" alt="Our Logo" class="site-logo" />
+      <div class="nav-links">
+        <div class="main-links">
+          <a href="Home.html" class="nav-item active">Home</a>
+          <a href="Listing page.html" class="nav-item">Products Info</a>
+          <a href="About Us.html" class="nav-item">About Us</a>
+          <a href="Contact Us-final.html" class="nav-item">Contact Us</a>
+          <a href="booking.html" class="nav-item">Booking</a>
+        </div>
+        <a href="login.html" class="nav-item sign-in">
+          <i class="fa-regular fa-user"></i>Sign in
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main section">
+      <div class="area">
+        <div class="form">
+          <div class="book">Book Your Car</div>
+          <form>
+            <section class="line-one">
+              <div>
+                <p>Full Name:</p>
+                <input type="text" id="full-name" placeholder="Full Name" />
+              </div>
+              <div>
+                <p>Phone Number:</p>
+                <input type="number" id="phone" placeholder="+20" />
+              </div>
+            </section>
+            <section class="line-two">
+              <div>
+                <p>Email:</p>
+                <input type="email" id="email" placeholder="----@gmail.com" />
+              </div>
+              <div>
+                <p>Card Number:</p>
+                <input type="number" id="card" placeholder="1234 5678 9012 3456" />
+              </div>
+            </section>
+            <section class="line-three">
+              <div>
+                <p>Expire Date:</p>
+                <input type="month" id="exp" />
+              </div>
+              <div>
+                <p>CVC/CVV:</p>
+                <input type="number" id="cvc" placeholder="023" />
+              </div>
+            </section>
+            <section class="line-four">
+              <div>
+                <p>Name on Card:</p>
+                <input type="text" id="name-on-card" placeholder="Name on Card" />
+              </div>
+            </section>
+          </form>
+        </div>
+
+        <div class="summary">
+          <div id="Order">Order Summary</div>
+          <section id="c-car">
+            <select id="carSelect">
+              <option value="" disabled selected>Choose Your Car</option>
+              <option value="608000">Lamborghini Revuelto</option>
+              <option value="2800000">Koenigsegg One of One</option>
+              <option value="107000">BMW X6 M Drive</option>
+              <option value="242000">Lamborghini Urus</option>
+              <option value="145000">Lotus Eletre 2025</option>
+              <option value="280000">Ferrari Portofino</option>
+              <option value="602000">Ferrari 812 Competizione</option>
+              <option value="107000">Porsche 911 GT3 RS</option>
+              <option value="534000">Porsche Carrera GT</option>
+            </select>
+            <p>Total Payment: <span id="totalPrice">$0</span></p>
+          </section>
+          <span>
+            <div>Total payments</div>
+            <div id="cost">$0</div>
+          </span>
+          <section class="buttons">
+            <button type="button" class="pay" onclick="validateAndPay()">
+              Pay $0
+            </button>
+            <button type="button" class="Car-Brochure" onclick="generateBrochure()">
+              Car Brochure
+            </button>
+            <p id="pay"></p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="quick-links">
+        <p>Quick Links</p>
+        <div class="quick-links-items-list">
+          <a class="quick-links-item" href="Home.html">Home</a><br />
+          <a class="quick-links-item" href="Listing page.html">Products Info</a><br />
+          <a class="quick-links-item" href="About Us.html">About Us</a><br />
+          <a class="quick-links-item" href="Contact Us-final.html">Contact Us</a><br />
+          <a class="quick-links-item" href="booking.html">Booking</a><br />
+          <a class="quick-links-item" href="Register.html">Sign in</a>
+        </div>
+      </div>
+      <div class="our-brands">
+        <p>Our Brands</p>
+        <ul>
+          <li>Lamborghini</li>
+          <li>Porsche</li>
+          <li>Lotus</li>
+          <li>BMW</li>
+          <li>Koenigsegg</li>
+          <li>Ferrari</li>
+        </ul>
+      </div>
+      <div class="socials">
+        <p>Our Mobile App</p>
+        <div class="social-icon-box">
+          <i class="fa-brands fa-apple apple-logo"></i>
+          <a href="https://www.apple.com/app-store/" class="download-button-text">
+            <p>Download on the Apple Store</p>
+          </a>
+        </div>
+        <div class="social-icon-box">
+          <i class="fa-brands fa-google-play google-play-logo"></i>
+          <a href="https://play.google.com/store/games?device=windows" class="download-button-text">
+            <p>Get it on Google Play</p>
+          </a>
+        </div>
+        <p>Connect With Us</p>
+        <div class="social-connect-icons">
+          <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/"> <i class="fa-brands fa-twitter"></i> </a>
+          <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="copy-right-div">
+        <p id="copy-right">© 2025 DosBenzen.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JAVASCRIPT/booking.js"></script>
+</body>
+
+</html>

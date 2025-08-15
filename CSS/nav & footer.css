@@ -1,0 +1,265 @@
+nav {
+  background-color: var(--main-color);
+  min-width: 1700px;
+  height: 103.75px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-container {
+  width: 1700px;
+  height: 103.75px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-logo {
+  margin-left: 60px;
+  max-width: 150px;
+  max-height: 105px;
+}
+
+.main-links {
+  display: flex;
+  gap: 30px;
+  width: 620px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 60px;
+}
+
+.nav-item {
+  color: var(--main-background-color);
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  margin: 0;
+  transition-duration: 0.3s;
+}
+
+.nav-item:hover {
+  color: var(--sub-color1);
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  height: 50px;
+  width: 150px;
+  border-radius: 46px;
+  background-color: var(--main-background-color);
+  font-size: 15px;
+  gap: 8px;
+  transition-duration: 0.3s;
+}
+
+.sign-in:hover {
+  background-color: var(--sub-color1);
+  color: var(--main-background-color);
+}
+
+.sign-in i {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+footer {
+  background-color: var(--main-color);
+  width: 100%;
+  min-width: 1700px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 1700px;
+}
+
+.quick-links {
+  width: 256px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.quick-links p {
+  color: var(--main-background-color);
+  font-size: 20px;
+  font-weight: 500px;
+  margin: 20px 0px;
+}
+
+.quick-links a {
+  color: var(--main-background-color);
+  text-decoration: none;
+  height: 28px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  transition-duration: 0.3s;
+}
+
+.quick-links a:hover {
+  color: var(--sub-color1);
+}
+
+.quick-links-items-list {
+  height: 230px;
+  padding: 12px 0px;
+  margin: 16px 0px;
+}
+
+.quick-links-item {
+  width: auto;
+}
+
+.our-brands {
+  width: 285px;
+  color: var(--main-background-color);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.our-brands p {
+  color: var(--main-background-color);
+  font-size: 20px;
+  font-weight: 500px;
+  margin: 20px 0px;
+}
+
+.our-brands ul {
+  list-style-type: none;
+  padding: 12px 0px;
+}
+
+.our-brands li {
+  color: var(--main-background-color);
+  text-decoration: none;
+  height: 28px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.socials {
+  width: 200px;
+  color: var(--main-background-color);
+  font-size: 20px;
+  font-weight: 500;
+  float: right;
+}
+
+.socials p {
+  text-align: center;
+}
+
+.download-button-text {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--main-background-color);
+  font-weight: 400;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.social-icon-box {
+  height: 60px;
+  background-color: #ffffff07;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  padding: 0px 25px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.social-icon-box .google-play-logo {
+  width: 25px;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.social-icon-box:hover {
+  background-color: var(--main-background-color);
+  color: var(--main-color);
+}
+
+.social-icon-box:hover,
+.social-icon-box:hover a,
+.social-icon-box:hover p {
+  color: var(--main-color);
+}
+
+.social-icon-box .apple-logo {
+  width: 25px;
+  scale: 1.25;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.social-connect-icons {
+  display: flex;
+  /* width: 220px; */
+  justify-content: space-between;
+}
+
+.social-connect-icons i {
+  height: 15px;
+  color: var(--main-background-color);
+  transition-duration: 0.3s;
+}
+
+.fa-facebook-f:hover {
+  color: #1877f2;
+}
+
+.fa-instagram:hover {
+  color: #e4405f;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+}
+
+.social-connect-icons a {
+  text-decoration: none;
+}
+
+footer hr {
+  border: var(--main-background-color) 12 solid 1px;
+  margin: 0px;
+  width: 100%;
+}
+
+#copy-right {
+  color: var(--main-background-color);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.copy-right-div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}

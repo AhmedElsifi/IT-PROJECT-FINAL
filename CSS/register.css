@@ -1,0 +1,254 @@
+:root {
+  --main-color: #050b20;
+  --sub-color1: #405ff2;
+  --main-background-color: #ffffff;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  padding: 24px;
+  border-radius: 12px;
+  min-width: 500px;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 1570px;
+  margin: 25px;
+  height: 650px;
+}
+
+.container div {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  width: 108%;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  background-color: #fff;
+  gap: 20px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: 17px;
+}
+
+.tabs :hover {
+  color: #1877f2;
+  background-color: white;
+}
+
+.tabs a {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bolder;
+  font-style: normal;
+  color: #000000;
+  font-family: "Inria Sans", sans-serif;
+  text-decoration: none;
+  position: relative;
+  right: 0;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.tabs a:hover {
+  position: relative;
+  text-decoration-thickness: 2px;
+}
+
+.tabs a::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #1967d2;
+  position: absolute;
+  left: 1.5cap;
+  bottom: -7px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.tabs a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.line1 {
+  border-radius: 8px;
+  background-color: #cacaca;
+  position: relative;
+  top: -23px;
+  height: 1.5px;
+  margin-top: -10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+label {
+  margin-bottom: 4px;
+  color: #333;
+  font-size: 14px;
+  display: block;
+}
+
+.password {
+  width: 100%;
+  position: relative;
+}
+
+.password button {
+  padding: 0;
+  border: none;
+  background-color: none;
+  font-size: 15px;
+  position: absolute;
+  top: 55%;
+  right: 17px;
+  cursor: pointer;
+}
+
+
+.login {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 12px;
+  margin: 7px;
+  width: 100%;
+  color: white;
+  background-color: #3b82f6;
+  font-weight: bold;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border: 1px solid #3b82f6;
+}
+
+.login:hover {
+  color: #3b82f6;
+  background-color: #f9f9ff;
+  outline: none;
+  transition: 0.3;
+}
+
+.or {
+  margin: 15px 0;
+  text-align: center;
+  position: relative;
+  font-family: "Playwrite RO", cursive;
+  font-optical-sizing: auto;
+  font-weight: weighted;
+  font-style: normal;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+}
+
+.or::before {
+  left: 0;
+}
+
+.or::after {
+  right: 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.social-media p,
+.social-media i {
+  margin: 0;
+}
+
+.facebook,
+.google {
+  padding: 0.5rem;
+  border: 2px solid;
+  border-radius: 12px;
+  background: #fff;
+  font-weight: bold;
+  flex: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  padding: 10px 20px;
+  width: 222px;
+}
+
+.facebook {
+  color: #1877f2;
+  border: 1px solid #1877f2;
+}
+
+.google {
+  color: #db4437;
+  border: 1px solid #db4437;
+}
+
+.google:hover {
+  color: #f9ffff;
+  background-color: #db4437;
+}
+
+.facebook:hover {
+  color: #f9ffff;
+  background-color: #1877f2;
+}
+
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
